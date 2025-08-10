@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SanJan Kumar | Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    crossorigin="anonymous"
+  />
+
+  <link rel="stylesheet" href="portfolio.css" />
+</head>
+<body>
+
+  <!-- full-screen particle canvas -->
+  <canvas id="bgCanvas" aria-hidden="true"></canvas>
+
+  <nav>
+    <div class="logo">Sanjan Kumar <span class="sn">Portfolio</span></div>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- SECTION 1: HERO / WELCOME -->
+  <section id="hero" class="section hero-bg">
+    <div class="hero-overlay">
+      <div class="profile-pic" aria-hidden="true">
+        <img src="profile.jpeg" alt="SanJan Kumar profile photo (replace)" />
+      </div>
+
+      <h1 class="glitch" data-text="Hi, I'm B M SanJan Kumar">Hi, I'm B M SanJan Kumar</h1>
+      <p class="hero-sub">Creative Developer | Problem Solver | Technology Enthusiast</p>
+      <div class="hero-actions">
+        <button class="btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get in Touch</button>
+      </div>
+    </div>
+
+    <div class="scroll-indicator" aria-hidden="true">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: SKILLS -->
+<section id="skills" class="section skills-bg">
+  <div class="section-inner">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills-grid">
+      <div class="skill-block">
+        <h3>Languages</h3>
+        <div class="skill-box">C++</div>
+        <div class="skill-box">C#</div>
+      </div>
+
+      <div class="skill-block">
+        <h3>Front-end</h3>
+        <div class="skill-box">HTML</div>
+        <div class="skill-box">CSS</div>
+        <div class="skill-box">JavaScript</div>
+      </div>
+
+      <div class="skill-block">
+        <h3>Tools</h3>
+        <div class="skill-box">Visual Studio</div>
+        <div class="skill-box">Arduino IDE</div>
+        <div class="skill-box">MATLAB / Simulink</div>
+        <div class="skill-box">LabVIEW</div>
+        <div class="skill-box">Cadence Virtuoso</div>
+      </div>
+
+      <div class="skill-block">
+        <h3>Coding Platforms</h3>
+        <div class="skill-box">CodeChef</div>
+        <div class="skill-box">HackerRank</div>
+        <div class="skill-box">LeetCode</div>
+      </div>
+      <div class="skill-block">
+        <h3>Core Electronics</h3>
+        <div class="skill-box">Analog & Digital Electronics</div>
+        <div class="skill-box">Embedded Systems</div>
+        <div class="skill-box">Sensor Interfacing & Calibration</div>
+        <div class="skill-box">VLSI Design</div>
+        <div class="skill-box">Microcontrollers & Microprocessors</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- SECTION 3: CERTIFICATES -->
+<section id="certificates" class="section certs-bg">
+  <div class="section-inner">
+    <h2 class="section-title">Certificates</h2>
+    <div class="cert-grid">
+      
+      <!-- Certificate 1 -->
+      <article class="cert-card">
+        <h4>C++ Certificate</h4>
+        <p>Completed C++ programming certification.</p>
+        <button class="btn" onclick="window.open('c++.pdf','_blank')">Download PDF</button>
+      </article>
+
+      <!-- Certificate 2 -->
+      <article class="cert-card">
+        <h4>DSA in C++ Certificate</h4>
+        <p>Completed Data Structures & Algorithms certification.</p>
+        <button class="btn" onclick="window.open('DSA.pdf','_blank')">Download PDF</button>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- SECTION 4: PROJECTS -->
+<section id="projects" class="section projects-bg">
+  <div class="section-inner">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="project-grid">
+      <!-- Project 1 -->
+      <article class="project-card" tabindex="0" aria-label="Elite Stays Website">
+        <img src="Screenshot (38).png" alt="Elite Stays Website Screenshot" />
+        <div class="project-info">
+          <h4>Elite Stays Website</h4>
+          <p>A responsive hotel & property booking website with smooth UI and booking features.</p>
+          <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Responsive design</li>
+            <li>Interactive forms & animations</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+<article class="project-card" tabindex="0" aria-label="IoT-Based Temperature Monitoring with ThingSpeak">
+  <img src="iot.jpeg" alt="IoT Temperature Monitoring Project Screenshot" />
+  <div class="project-info">
+    <h4>IoT-Based Temperature Monitoring with ThingSpeak</h4>
+    <p>A real-time temperature monitoring system using a thermocouple sensor, sending data to the cloud via ThingSpeak for visualization and analysis.</p>
+    <ul>
+      <li>Arduino / ESP8266</li>
+      <li>Thermocouple temperature sensor</li>
+      <li>ThingSpeak cloud integration</li>
+    </ul>
+  </div>
+</article>
+
+
+      <!-- Project 3 -->
+      <article class="project-card" tabindex="0" aria-label="Robotic Hand to Demonstrate Yoga Mudras">
+        <img src="project 1.jpeg" alt="Robotic Hand Project Screenshot" />
+        <div class="project-info">
+          <h4>Robotic Hand to Demonstrate Yoga Mudras</h4>
+          <p>A robotic arm capable of demonstrating traditional yoga mudras using servo control.</p>
+          <ul>
+            <li>Arduino, Servo Motors</li>
+            <li>3D-printed components</li>
+            <li>Gesture programming</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Project 4 -->
+      <article class="project-card" tabindex="0" aria-label="Smart Drone–Based Surveillance System">
+        <img src="drone.jpeg" alt="Smart Drone Surveillance Screenshot" />
+        <div class="project-info">
+          <h4>Smart Drone–Based Surveillance System</h4>
+          <p>A drone system for live monitoring and data collection using IoT and computer vision.</p>
+          <ul>
+            <li>ESP8266, Camera module</li>
+            <li>IoT integration</li>
+            <li>Live streaming & GPS tracking</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+  <!-- SECTION 5: RESUME + CONTACT -->
+  <section id="resume" class="section resume-bg">
+    <div class="section-inner">
+      <h2 class="section-title">Resumes</h2>
+      <div class="resume-cards">
+        <div class="resume-card">
+          <h3>Core Electronics</h3>
+          <p>Focused on electronics projects, circuits and VLSI work.</p>
+          <button class="btn" onclick="window.open('BM SANJAN KUMAR-CV.pdf','_blank')">Download Core Resume</button>
+        </div>
+
+        <div class="resume-card">
+          <h3>Information Technology (IT)</h3>
+          <p>Software, web and systems development resume.</p>
+          <button class="btn" onclick="window.open('1SI22EI003-BM SANJAN KUMAR (1) (1).pdf','_blank')">Download IT Resume</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+<section id="contact" class="section contact-bg">
+  <div class="section-inner contact-wrap">
+    
+    <!-- Left Column: Contact Info -->
+    <div class="contact-info">
+      <h2>Contact Me</h2>
+      <p>Have a project in mind or want to collaborate? Feel free to reach out. I'm always open to discussing new opportunities.</p>
+      
+      <div class="info-item">
+        <i class="fas fa-envelope"></i>
+        <span>bmsanjankumar.1si22ei003@example.com</span>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-phone"></i>
+        <span>+91 7899935025</span>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Tumakuru, Karnataka, India</span>
+      </div>
+
+      <div class="social-icons">
+        <a href="https://twitter.com/yourhandle" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com/yourhandle" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com/in/bmsanjankumar" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:bmsanjankumar.1si22ei003@example.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <!-- Right Column: Contact Form -->
+    <form class="contact-form" action="mailto:your.email@example.com" method="POST" enctype="text/plain" target="_blank">
+      <div class="input-group">
+        <label for="name">Name</label>
+        <input id="name" name="Name" type="text" required placeholder="Your full name" />
+      </div>
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input id="email" name="Email" type="email" required placeholder="Your email address" />
+      </div>
+      <div class="input-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="Message" rows="5" required placeholder="Your message here"></textarea>
+      </div>
+      <button type="submit" class="btn submit-btn">Send Message</button>
+    </form>
+
+  </div>
+</section>
+
+
+  <footer>
+    &copy; 2025 B M Sanjan Kumar. All Rights Reserved.
+  </footer>
+
+  <div id="customCursor" aria-hidden="true"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/@studio-freight/lenis"></script>
+<!-- then your scripts.js (the code above) -->
+
+
+  <script src="scripts.js"></script>
+</body>
+</html>
