@@ -448,3 +448,94 @@ a:hover ~ #customCursor, button:hover ~ #customCursor, .btn:hover ~ #customCurso
     text-decoration: underline;
     text-decoration-color: #3399ff;
 }
+/* Your full existing CSS above ... */
+
+/* Responsive */
+/* Existing */
+@media (max-width:980px){
+  .skills-grid{grid-template-columns:1fr}
+  .contact-wrap{grid-template-columns:1fr}
+  nav ul{display:none}
+  nav{padding:0 16px}
+  .glitch{font-size:2.1rem}
+  .profile-pic{width:110px;height:110px}
+}
+@media (max-width:560px){
+  .hero-overlay{padding:12px}
+  .glitch{font-size:1.6rem}
+  .profile-pic{width:90px;height:90px}
+  .section{padding:60px 14px}
+}
+
+/* Added: improve navigation for mobile */
+/* Show a hamburger menu icon on small screens (basic example) */
+@media (max-width:980px) {
+  nav {
+    justify-content: space-between;
+  }
+  nav ul {
+    position: fixed;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: var(--bg-color);
+    flex-direction: column;
+    display: none;
+    padding: 20px 0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  }
+  nav ul.active {
+    display: flex;
+  }
+  nav li {
+    margin: 12px 0;
+    text-align: center;
+  }
+  /* Hamburger button style */
+  #hamburger {
+    display: block;
+    cursor: pointer;
+    width: 28px;
+    height: 22px;
+    position: relative;
+  }
+  #hamburger span {
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: var(--text);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+  #hamburger span:nth-child(1) {
+    top: 0;
+  }
+  #hamburger span:nth-child(2) {
+    top: 9px;
+  }
+  #hamburger span:nth-child(3) {
+    bottom: 0;
+  }
+}
+
+/* Added: make project grid single column on small screens */
+@media (max-width: 700px) {
+  .project-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Added: make resume cards stack on small */
+@media (max-width: 700px) {
+  .resume-cards {
+    flex-direction: column !important;
+  }
+}
+
+/* Added: form inputs full width on small */
+@media (max-width: 560px) {
+  .input-group input,
+  .input-group textarea {
+    font-size: 1rem;
+  }
+}
